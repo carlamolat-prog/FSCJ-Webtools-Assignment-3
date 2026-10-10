@@ -1,4 +1,4 @@
-/*Quiz Questions*/
+<!-- Quiz Questions -->
 
 const questions = [
   {
