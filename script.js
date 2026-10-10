@@ -1,4 +1,4 @@
-<!-- Quiz Questions -->
+/* The quiz is six items in length. */
 
 const questions = [
   {
