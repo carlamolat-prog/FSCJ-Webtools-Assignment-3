@@ -45,3 +45,47 @@ const resultsEl = document.getElementById("results");
 
 /*Start button event*/
 startBtn.addEventListener("click", startQuiz);
+
+/*Start the Quiz*/
+function startQuiz() {
+  startBtn.classList.add("hidden");
+  quizContainer.classList.remove("hidden");
+  showQuestion();
+}
+
+/*Show Questions.*/
+function showQuestion() {
+  const q = questions[currentIndex];
+  questionEl.textContent = q.text;
+
+  choicesEl.innerHTML = "";/*Intended to Clear Old Buttons*/
+
+  q.choices.forEach((choice, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = choice;
+    btn.addEventListener("click", () => handleAnswer(index));
+    choicesEl.appendChild(btn);
+  });
+}
+
+/*Answer Click*/
+function handleAnswer(selectedIndex) {
+  if (selectedIndex === questions[currentIndex].answer) {
+    score++;
+  }
+
+  currentIndex++;
+
+  if (currentIndex < questions.length) {
+    showQuestion();
+  } else {
+    endQuiz();
+  }
+}
+
+/*Termination of Quiz*/
+function endQuiz() {
+  quizContainer.classList.add("hidden");
+  resultsEl.classList.remove("hidden");
+  resultsEl.textContent = `You scored ${score} out of ${questions.length}!`;
+}
