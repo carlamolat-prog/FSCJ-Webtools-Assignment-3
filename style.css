@@ -1,1 +1,6 @@
-
+/*CSS Style - teal background and gray text*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    background-color: teal;
+}
