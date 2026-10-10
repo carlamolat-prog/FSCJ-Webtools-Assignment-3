@@ -35,3 +35,6 @@ const questions = [
 /*State*/
 let currentIndex = 0;
 let score = 0;
+
+/*DOM Elements*/
+const startBtn = document.getElementById("start-btn");
