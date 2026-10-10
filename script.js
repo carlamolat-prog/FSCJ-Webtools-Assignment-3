@@ -42,3 +42,6 @@ const quizContainer = document.getElementById("quiz-container");
 const questionEl = document.getElementById("question");
 const choicesEl = document.getElementById("choices");
 const resultsEl = document.getElementById("results");
+
+/*Start button event*/
+startBtn.addEventListener("click", startQuiz);
