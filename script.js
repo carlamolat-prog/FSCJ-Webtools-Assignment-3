@@ -28,6 +28,6 @@ const questions = [
   {
     text: "Which university is located in Daytona Beach?",
     choices: ["Petrograd State University", "University of North Florida", "Embry-Riddle Aeronautical University", "DeVry University"],
-    answer:
+    answer: 3
   }
 ];
