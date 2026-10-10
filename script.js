@@ -31,3 +31,7 @@ const questions = [
     answer: 3
   }
 ];
+
+/*State*/
+let currentIndex = 0;
+let score = 0;
