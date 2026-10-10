@@ -39,3 +39,5 @@ let score = 0;
 /*DOM Elements*/
 const startBtn = document.getElementById("start-btn");
 const quizContainer = document.getElementById("quiz-container");
+const questionEl = document.getElementById("question");
+const choicesEl = document.getElementById("choices");
