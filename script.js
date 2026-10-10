@@ -1,4 +1,5 @@
 /*Quiz Questions*/
+
 const questions = [
   {
     text: "Which of these highways parallels the Atlantic Ocean?",
@@ -33,10 +34,12 @@ const questions = [
 ];
 
 /*State*/
+
 let currentIndex = 0;
 let score = 0;
 
 /*DOM Elements*/
+
 const startBtn = document.getElementById("start-btn");
 const quizContainer = document.getElementById("quiz-container");
 const questionEl = document.getElementById("question");
@@ -54,6 +57,7 @@ function startQuiz() {
 }
 
 /*Show Questions.*/
+
 function showQuestion() {
   const q = questions[currentIndex];
   questionEl.textContent = q.text;
@@ -69,6 +73,7 @@ function showQuestion() {
 }
 
 /*Answer Click*/
+
 function handleAnswer(selectedIndex) {
   if (selectedIndex === questions[currentIndex].answer) {
     score++;
@@ -84,6 +89,7 @@ function handleAnswer(selectedIndex) {
 }
 
 /*Termination of Quiz*/
+
 function endQuiz() {
   quizContainer.classList.add("hidden");
   resultsEl.classList.remove("hidden");
