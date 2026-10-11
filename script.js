@@ -1,4 +1,4 @@
-/* The quiz is six items in length. */
+// The quiz is six items in length. 
 
 const questions = [
   {
@@ -33,12 +33,12 @@ const questions = [
   }
 ];
 
-/*State*/
+//State
 
 let currentIndex = 0;
 let score = 0;
 
-/*DOM Elements*/
+//DOM Elements
 
 const startBtn = document.getElementById("start-btn");
 const quizContainer = document.getElementById("quiz-container");
@@ -46,17 +46,17 @@ const questionEl = document.getElementById("question");
 const choicesEl = document.getElementById("choices");
 const resultsEl = document.getElementById("results");
 
-/*Start button event*/
+//Start button event
 startBtn.addEventListener("click", startQuiz);
 
-/*Start the Quiz*/
+//Start the Quiz
 function startQuiz() {
   startBtn.classList.add("hidden");
   quizContainer.classList.remove("hidden");
   showQuestion();
 }
 
-/*Show Questions.*/
+//Show Questions.
 
 function showQuestion() {
   const q = questions[currentIndex];
@@ -72,7 +72,7 @@ function showQuestion() {
   });
 }
 
-/*Answer Click*/
+//Answer Click
 
 function handleAnswer(selectedIndex) {
   if (selectedIndex === questions[currentIndex].answer) {
@@ -88,7 +88,7 @@ function handleAnswer(selectedIndex) {
   }
 }
 
-/*Termination of Quiz*/
+//Termination of Quiz
 
 function endQuiz() {
   quizContainer.classList.add("hidden");
