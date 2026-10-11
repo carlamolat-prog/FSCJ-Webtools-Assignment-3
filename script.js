@@ -4,32 +4,32 @@ const questions = [
   {
     text: "Which of these highways parallels the Atlantic Ocean?",
     choices: ["I-10", "I4", "US-17", "A1A"],
-    answer: 4
+    answer: 3
   },
   {
     text: "Which of these cities is the northernmost of the Jacksonville Beaches?",
     choices: ["Atlantic Beach", "Neptune Beach", "Jacksonville Beach", "Ponte Vedra Beach"],
-    answer: 1
+    answer: 0
   },
   {
     text: "Which of these cities is the southernmost of the Daytona Beaches?",
     choices: ["Ormond Beach", "Daytona Beach", "Daytona Beach Shores", "Ponce Inlet"],
-    answer: 4
+    answer: 3
   },
   {
     text: "Which of these counties does SR-436 pass through?",
     choices: ["Osceola", "Orange", "Volusia", "Duval"],
-    answer: 2
+    answer: 1
   },
   {
     text: "What city is known as 'The City Beautiful'?",
     choices: ["Deland", "Orlando", "Sanford", "Debary"],
-    answer: 2
+    answer: 1
   },
   {
     text: "Which university is located in Daytona Beach?",
     choices: ["Petrograd State University", "University of North Florida", "Embry-Riddle Aeronautical University", "DeVry University"],
-    answer: 3
+    answer: 2
   }
 ];
 
